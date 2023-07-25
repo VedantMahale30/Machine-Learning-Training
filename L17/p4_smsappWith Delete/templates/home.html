@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title> What Next App</title>
+	<style>
+	
+		*{ font-size:40px }
+		td{ text-align:center; }
+	
+	</style>
+
+</head>
+
+<body>
+	
+	<center>
+		<h1> Home </h1>
+		<a href ="{{ url_for('create') }}">Create Student </a>
+		<br/><br/>
+		<table border ="4" style="width:50%">
+			<tr>
+				<th> Rno </th>
+				<th> Name</th>
+				<th> Delete</th>
+			</tr>		
+		{%  for m in msg  %}
+			<tr>
+				<td>{{ m[0] }}</td>
+				<td>{{ m[1] }}</td>
+				<td> <a href ="{{  url_for('delstu' ,id =m[0] )}}"
+				onclick = "return confirm('r u sure? ')">delete</a></td>
+			</tr>
+		{% endfor %}
+		</table>
+	</center>
+	
+</body>
+</html>

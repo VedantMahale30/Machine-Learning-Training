@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Movie Review app</title>
+	<style>
+
+		*{ font-size :40px; font-family:Courier; }
+		textarea { resize:None }
+		body { background-color:khaki}
+
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Area Circum App </h1>
+		<form method ="POST">
+			<input type ="text" placeholder = "Enter Movie Name" name="mn" required/>
+			<br/><br/>
+			<textarea name = "rv" placeholder="Enter movie review " required rows=5></textarea>
+			<br/><br/>
+			<input type ="submit" />
+		</form>
+		{{ msg }}
+	</center>	
+</body>
+</html>

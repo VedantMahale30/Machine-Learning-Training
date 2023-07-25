@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title> What Next App</title>
+	<style>
+	
+		*{ font-size:40px }
+		td{ text-align:center; }
+	
+	</style>
+
+</head>
+
+<body>
+	<center>
+		<h1> Create </h1>
+		<a href ="{{ url_for('home') }}">Home </a>
+		<br/><br/>
+		<form method = "POST">
+			<input type = "nmber" name="rn" placeholder="Enter No" required min=/>
+			<br/><br/>
+			<input type = "text" name="na" placeholder="enter name" required/>
+			<br/><br/>
+			<input type = "submit" value="Save"/>
+		</form>
+		{{ msg }}
+	</center>
+</body>
+</html>

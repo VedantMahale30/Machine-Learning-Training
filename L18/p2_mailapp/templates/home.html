@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title> Password Generator </title>
+	<style>
+	*{ font-size:40px; }
+	body{ background-color:lightblue; }
+	</style>
+</head>
+<body>
+	<center>
+	<form method == "POST">
+	<input type = "email" placeholder = "Enter your Email" name = "em">
+	</br></br>
+	Select Length<select name="length">
+		<option value = "6">6</option>
+		<option value = "7">7</option>
+		<option value = "8">8</option>
+		</select>
+		</br></br>
+		<input type = "checkbox" name = "uc" name = "uc"/>UpperCase
+		<input type = "checkbox" name = "di" name = "di"/>Digits
+		</br></br>
+		<input type = "submit" value ="Generate Password"/>
+	</form>
+	{{ msg }}
+	</center>
+</body>
+</html>
